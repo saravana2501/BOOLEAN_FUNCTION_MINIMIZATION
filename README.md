@@ -1,4 +1,8 @@
-# BOOLEAN_FUNCTION_MINIMIZATION
+**EXP2:BOOLEAN FUNCTION MINIMIZATION**
+
+NAME: SARAVANA KUMAR
+
+REF NO:24900200
 
 **AIM:**
 
@@ -14,9 +18,6 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Software – Quartus prime**
 
-**Theory**
-
-**Logic Diagram**
 
 **Procedure**
 
@@ -33,18 +34,29 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+ Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+module booleanminimization(a,b,c,d,f1);
+
+input a,b,c,d;
+
+output f1;
+
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+
+endmodule
+
 
 
 **RTL realization**
 
-**Output:**
+![boolean minimization waveform screenshot](https://github.com/user-attachments/assets/0097b45f-aef3-4c8d-b427-03f56ad4e766)
+
 
 **RTL**
 
-**Timing Diagram**
+![boolean minimization screenshot](https://github.com/user-attachments/assets/e66714ae-8f95-4c53-b548-e572245bfac1)
+
 
 **Result:**
 
